@@ -1,0 +1,15 @@
+# Vivado generated files
+  *.cache/
+  *.hw/
+  *.ip_user_files/
+  *.sim/
+  *.runs/
+
+  # Vivado logs and temp files
+  vivado.jou
+  vivado.log
+  vivado_pid*.str
+  *.backup.xpr
+
+  # OS files
+  .Xil/
