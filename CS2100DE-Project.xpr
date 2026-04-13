@@ -7,7 +7,7 @@
 <Project Product="Vivado" Version="7" Minor="65" Path="/home/krithikh/CS2100DE-Project/CS2100DE-Project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="8238d95b3f93475caee8306f8703c5c9"/>
+    <Option Name="Id" Val="fa2f0e5883314e20b102dd62f8e25eb4"/>
     <Option Name="Part" Val="xc7a100tcsg324-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -92,124 +92,105 @@
   <FileSets Version="1" Minor="32">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sources_1/imports/imports/krithikh/Downloads/ALU.sv">
+      <File Path="$PPRDIR/src/ALU.sv">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/Project.srcs/sources_1/imports/krithikh/Downloads/ALU.sv"/>
-          <Attr Name="ImportTime" Val="1773366753"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/imports/Downloads/Adder.sv">
+      <File Path="$PPRDIR/src/Adder.sv">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/Project.srcs/sources_1/imports/Downloads/Adder.sv"/>
-          <Attr Name="ImportTime" Val="1773370316"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/imports/krithikh/NUS-Modules/CS2100DE/Labs/week_7/week_7.srcs/sources_1/imports/Downloads/Decoder.sv">
+      <File Path="$PPRDIR/src/Decoder.sv">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/Project.srcs/sources_1/imports/krithikh/NUS-Modules/CS2100DE/Labs/week_7/week_7.srcs/sources_1/imports/Downloads/Decoder.sv"/>
-          <Attr Name="ImportTime" Val="1776046282"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/imports/krithikh/NUS-Modules/CS2100DE/Labs/week_7/week_7.srcs/sources_1/imports/Downloads/Extend.sv">
+      <File Path="$PPRDIR/src/Extend.sv">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/Project.srcs/sources_1/imports/krithikh/NUS-Modules/CS2100DE/Labs/week_7/week_7.srcs/sources_1/imports/Downloads/Extend.sv"/>
-          <Attr Name="ImportTime" Val="1772767433"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/imports/krithikh/Downloads/PC_Logic.sv">
+      <File Path="$PPRDIR/src/PC_Logic.sv">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/Project.srcs/sources_1/imports/krithikh/Downloads/PC_Logic.sv"/>
-          <Attr Name="ImportTime" Val="1775984843"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/imports/krithikh/Downloads/ProgramCounter.sv">
+      <File Path="$PPRDIR/src/ProgramCounter.sv">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/Project.srcs/sources_1/imports/krithikh/Downloads/ProgramCounter.sv"/>
-          <Attr Name="ImportTime" Val="1773366757"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/imports/krithikh/Downloads/RISCV_MMC.sv">
+      <File Path="$PPRDIR/src/RISCV_MMC.sv">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/Project.srcs/sources_1/imports/krithikh/Downloads/RISCV_MMC.sv"/>
-          <Attr Name="ImportTime" Val="1776045883"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/imports/krithikh/Downloads/RegFile.sv">
+      <File Path="$PPRDIR/src/RegFile.sv">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/Project.srcs/sources_1/imports/krithikh/Downloads/RegFile.sv"/>
-          <Attr Name="ImportTime" Val="1773366771"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/imports/Downloads/SevenSegDecoder.sv">
+      <File Path="$PPRDIR/src/SevenSegDecoder.sv">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/Project.srcs/sources_1/imports/Downloads/SevenSegDecoder.sv"/>
-          <Attr Name="ImportTime" Val="1773970653"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/imports/Downloads/Top_MMC.sv">
+      <File Path="$PPRDIR/src/Top_MMC.sv">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/Project.srcs/sources_1/imports/Downloads/Top_MMC.sv"/>
-          <Attr Name="ImportTime" Val="1775979129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/imports/Downloads/AA_IROM.mem">
+      <File Path="$PPRDIR/src/Top_Test.sv">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/Project.srcs/sources_1/imports/Downloads/AA_IROM.mem"/>
-          <Attr Name="ImportTime" Val="1773971159"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/src/AA_DMEM.mem">
+        <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/imports/Downloads/AA_DMEM.mem">
+      <File Path="$PPRDIR/src/AA_IROM.mem">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/Project.srcs/sources_1/imports/Downloads/AA_DMEM.mem"/>
-          <Attr Name="ImportTime" Val="1773971164"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="Top_MMC"/>
+        <Option Name="TopModule" Val="Top_Test"/>
         <Option Name="TopAutoSet" Val="TRUE"/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
       <Filter Type="Constrs"/>
-      <File Path="$PSRCDIR/constrs_1/imports/Downloads/Nexys-4-Master-2100.xdc">
+      <File Path="$PPRDIR/src/Nexys-4-Master-2100.xdc">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/Project.srcs/constrs_1/imports/Downloads/Nexys-4-Master-2100.xdc"/>
-          <Attr Name="ImportTime" Val="1773970666"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>
@@ -219,15 +200,6 @@
       </Config>
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1" RelGenDir="$PGENDIR/sim_1">
-      <File Path="$PSRCDIR/sim_1/imports/Downloads/Top_Test.sv">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/Project.srcs/sim_1/imports/Downloads/Top_Test.sv"/>
-          <Attr Name="ImportTime" Val="1773971464"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="Top_Test"/>

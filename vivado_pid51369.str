@@ -1,0 +1,174 @@
+/*
+
+AMD Vivado v2023.2 (64-bit) [Major: 2023, Minor: 2]
+SW Build: 4029153 on Fri Oct 13 20:13:54 MDT 2023
+IP Build: 4028589 on Sat Oct 14 00:45:43 MDT 2023
+IP Build: 4028589 on Sat Oct 14 00:45:43 MDT 2023
+
+Process ID (PID): 51369
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Mon Apr 13 11:05:05 SGT 2026
+Time zone: 	Singapore Standard Time (Asia/Singapore)
+
+OS: Ubuntu
+OS Version: 6.8.0-107-generic
+OS Architecture: amd64
+Available processors (cores): 22
+LSB Release Description: Ubuntu 22.04.5 LTS
+
+Display: 0
+Screen size: 1920x1200
+Local screen bounds: x = 0, y = 1080, width = 1920, height = 1200
+Screen resolution (DPI): 100
+Available screens: 2
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+OS font scaling: 100%
+Anti-Alias Enabled: false
+
+Java version: 	17.0.7 64-bit
+JavaFX version: 17.0.1
+Java home: 	/Xilinx/Vivado/2023.2/tps/lnx64/jre17.0.7_7
+Java executable: 	/Xilinx/Vivado/2023.2/tps/lnx64/jre17.0.7_7/bin/java
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Djdk.gtk.version=2, -Dsun.java2d.uiScale.enabled=false, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, -XX:+UseStringDeduplication, -XX:MaxGCPauseMillis=200, -XX:+ParallelRefProcEnabled, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, -XX:NewSize=80m, -XX:MaxNewSize=80m, -Xms512m, -Xmx4072m, -Xss10m, -Xrs]
+Java initial memory (-Xms): 	512 MB
+Java maximum memory (-Xmx):	 3 GB
+
+User name: 	krithikh
+User home directory: /home/krithikh
+User working directory: /home/krithikh/CS2100DE-Project
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /Xilinx/Vivado
+HDI_APPROOT: /Xilinx/Vivado/2023.2
+RDI_DATADIR: /Xilinx/Vivado/2023.2/data
+RDI_BINDIR: /Xilinx/Vivado/2023.2/bin
+
+Vivado preferences file: /home/krithikh/.Xilinx/Vivado/2023.2/vivado.xml
+Vivado preferences directory: /home/krithikh/.Xilinx/Vivado/2023.2/
+Vivado layouts directory: /home/krithikh/.Xilinx/Vivado/2023.2/data/layouts
+PlanAhead jar file: 	/Xilinx/Vivado/2023.2/lib/classes/planAhead.jar
+Vivado log file: 	/home/krithikh/CS2100DE-Project/vivado.log
+Vivado journal file: 	/home/krithikh/CS2100DE-Project/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-51369-krithikh-ThinkPad-P1-Gen-7
+Non-Default Parameters:	[]
+
+Xilinx & AMD Environment Variables
+--------------------------------------------------------------------------------------------
+GNOME_SHELL_SESSION_MODE: ubuntu
+RDI_APPROOT: /Xilinx/Vivado/2023.2
+RDI_BASEROOT: /Xilinx/Vivado
+RDI_BINROOT: /Xilinx/Vivado/2023.2/bin
+RDI_BUILD: yes
+RDI_DATADIR: /Xilinx/Vivado/2023.2/data
+RDI_INSTALLROOT: /Xilinx
+RDI_INSTALLVER: 2023.2
+RDI_JAVA_PLATFORM: 
+RDI_JAVA_VERSION: 17.0.7_7
+RDI_LIBDIR: /Xilinx/Vivado/2023.2/lib/lnx64.o/Ubuntu/22:/Xilinx/Vivado/2023.2/lib/lnx64.o/Ubuntu:/Xilinx/Vivado/2023.2/lib/lnx64.o
+RDI_OPT_EXT: .o
+RDI_PATCHROOT: 
+RDI_PLATFORM: lnx64
+RDI_PREPEND_PATH: /Xilinx/Vivado/2023.2/ids_lite/ISE/bin/lin64
+RDI_PROG: /Xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/vivado
+RDI_SESSION_INFO: /home/krithikh/CS2100DE-Project:krithikh-ThinkPad-P1-Gen-7_1776049496_51328
+RDI_SHARED_DATA: /Xilinx/SharedData/2023.2/data
+RDI_TPS_ROOT: /Xilinx/Vivado/2023.2/tps/lnx64
+RDI_USE_JDK17: True
+SHELL: /bin/bash
+XILINX: /Xilinx/Vivado/2023.2/ids_lite/ISE
+XILINX_DSP: /Xilinx/Vivado/2023.2/ids_lite/ISE
+XILINX_HLS: /Xilinx/Vitis_HLS/2023.2
+XILINX_PLANAHEAD: /Xilinx/Vivado/2023.2
+XILINX_VIVADO: /Xilinx/Vivado/2023.2
+XILINX_VIVADO_HLS: /Xilinx/Vivado/2023.2
+
+
+GUI allocated memory:	512 MB
+GUI max memory:		4,072 MB
+Engine allocated memory: 1,525 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+selectButton(PAResourceEtoH.GettingStartedView_CREATE_NEW_PROJECT, "Create Project"); // u (PAResourceEtoH.GettingStartedView_CREATE_NEW_PROJECT)
+// Run Command: PAResourceCommand.PACommandNames_NEW_PROJECT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,563 MB. GUI used memory: 71 MB. Current time: 4/13/26, 11:05:06 AM SGT
+selectButton("NEXT", "Next >"); // JButton (NEXT)
+setText(PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, "CS2100DE-Project"); // Q (PAResourceOtoP.ProjectNameChooser_PROJECT_NAME)
+selectButton("NEXT", "Next >"); // JButton (NEXT)
+selectButton("NEXT", "Next >"); // JButton (NEXT)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT)
+String[] filenames31467 = {"/home/krithikh/CS2100DE-Project/src/AA_DMEM.mem", "/home/krithikh/CS2100DE-Project/src/AA_IROM.mem", "/home/krithikh/CS2100DE-Project/src/ALU.sv", "/home/krithikh/CS2100DE-Project/src/Adder.sv", "/home/krithikh/CS2100DE-Project/src/Decoder.sv", "/home/krithikh/CS2100DE-Project/src/Extend.sv", "/home/krithikh/CS2100DE-Project/src/PC_Logic.sv", "/home/krithikh/CS2100DE-Project/src/ProgramCounter.sv", "/home/krithikh/CS2100DE-Project/src/RISCV_MMC.sv", "/home/krithikh/CS2100DE-Project/src/RegFile.sv", "/home/krithikh/CS2100DE-Project/src/SevenSegDecoder.sv", "/home/krithikh/CS2100DE-Project/src/Top_MMC.sv", "/home/krithikh/CS2100DE-Project/src/Top_Test.sv"};
+setFileChooser(filenames31467);
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+selectCheckBox(PAResourceQtoS.SrcChooserPanel_MAKE_LOCAL_COPY_OF_THESE_FILES_INTO, "Copy sources into project", false); // f (PAResourceQtoS.SrcChooserPanel_MAKE_LOCAL_COPY_OF_THESE_FILES_INTO): FALSE
+selectCheckBox(PAResourceQtoS.SrcChooserPanel_MAKE_LOCAL_COPY_OF_THESE_FILES_INTO, "Copy sources into project", true); // f (PAResourceQtoS.SrcChooserPanel_MAKE_LOCAL_COPY_OF_THESE_FILES_INTO): TRUE
+selectCheckBox(PAResourceQtoS.SrcChooserPanel_MAKE_LOCAL_COPY_OF_THESE_FILES_INTO, "Copy sources into project", false); // f (PAResourceQtoS.SrcChooserPanel_MAKE_LOCAL_COPY_OF_THESE_FILES_INTO): FALSE
+selectButton("NEXT", "Next >"); // JButton (NEXT)
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_ADD_EXISTING_OR_CREATE_NEW_CONSTRAINTS, "Add"); // B (PAResourceAtoD.ConstraintsChooserPanel_ADD_EXISTING_OR_CREATE_NEW_CONSTRAINTS, Add)
+selectMenuItem(PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES, "Add Files..."); // ao (PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES, Add Files...)
+setFileChooser("/home/krithikh/CS2100DE-Project/src/Nexys-4-Master-2100.xdc");
+selectButton("NEXT", "Next >"); // JButton (NEXT)
+selectTab(PAResourceOtoP.PartChooser_TABBED_PANE, (HResource) null, "Boards", 1); // g (PAResourceOtoP.PartChooser_TABBED_PANE)
+selectTreeTable(PAResourceAtoD.BoardChooser_BOARD_TABLE, "Nexys4 DDR ; Nexys4 DDR ; Nexys4 DDR ; digilentinc.com ; 1.1 ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 4, "Nexys4 DDR", 0, false); // l (PAResourceAtoD.BoardChooser_BOARD_TABLE)
+selectTreeTable(PAResourceAtoD.BoardChooser_BOARD_TABLE, "Nexys4 ; Nexys4 ; Nexys4 ; digilentinc.com ; 1.1 ; Nexys4 ; 324 ; B.1 ; 210 ; 63400 ; 126800 ; 135 ; 0 ; 240 ; 32 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 1 ; 6 ;  ;  ;  ;  ; 0 ;  ;  ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 3, "Nexys4", 0, false); // l (PAResourceAtoD.BoardChooser_BOARD_TABLE)
+selectTreeTable(PAResourceAtoD.BoardChooser_BOARD_TABLE, "Nexys4 ; Nexys4 ; Nexys4 ; digilentinc.com ; 1.1 ; Nexys4 ; 324 ; B.1 ; 210 ; 63400 ; 126800 ; 135 ; 0 ; 240 ; 32 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 1 ; 6 ;  ;  ;  ;  ; 0 ;  ;  ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 3, "Nexys4", 1, false); // l (PAResourceAtoD.BoardChooser_BOARD_TABLE)
+selectTreeTable(PAResourceAtoD.BoardChooser_BOARD_TABLE, "Nexys4 ; Nexys4 ; Nexys4 ; digilentinc.com ; 1.1 ; Nexys4 ; 324 ; B.1 ; 210 ; 63400 ; 126800 ; 135 ; 0 ; 240 ; 32 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 1 ; 6 ;  ;  ;  ;  ; 0 ;  ;  ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 3, "Nexys4", 0, false); // l (PAResourceAtoD.BoardChooser_BOARD_TABLE)
+// [GUI Memory]: 118 MB (+121202kb) [00:00:59]
+// [Engine Memory]: 1,568 MB (+1493121kb) [00:00:59]
+selectButton("NEXT", "Next >"); // JButton (NEXT)
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 1,681 MB (+35827kb) [00:01:03]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: create_project CS2100DE-Project . -part xc7a100tcsg324-1 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/Xilinx/Vivado/2023.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 126 MB (+2475kb) [00:01:03]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: BOARD_MODIFIED
+// Tcl Message: set_property board_part digilentinc.com:nexys4:part0:1.1 [current_project] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse {/home/krithikh/CS2100DE-Project/src/AA_DMEM.mem /home/krithikh/CS2100DE-Project/src/AA_IROM.mem} 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse {/home/krithikh/CS2100DE-Project/src/RISCV_MMC.sv /home/krithikh/CS2100DE-Project/src/PC_Logic.sv /home/krithikh/CS2100DE-Project/src/Top_Test.sv /home/krithikh/CS2100DE-Project/src/ALU.sv /home/krithikh/CS2100DE-Project/src/ProgramCounter.sv /home/krithikh/CS2100DE-Project/src/RegFile.sv /home/krithikh/CS2100DE-Project/src/Decoder.sv /home/krithikh/CS2100DE-Project/src/Extend.sv /home/krithikh/CS2100DE-Project/src/Adder.sv /home/krithikh/CS2100DE-Project/src/Top_MMC.sv /home/krithikh/CS2100DE-Project/src/SevenSegDecoder.sv} 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset constrs_1 -norecurse /home/krithikh/CS2100DE-Project/src/Nexys-4-Master-2100.xdc 
+selectButton("FINISH", "Finish"); // JButton (FINISH)
+// 'g' command handler elapsed time: 57 seconds
+dismissDialog("Create Project"); // bq (Create Project Progress)
+dismissDialog("New Project"); // f (dialog0)
+// [GUI Memory]: 139 MB (+7257kb) [00:01:04]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,747 MB. GUI used memory: 76 MB. Current time: 4/13/26, 11:06:06 AM SGT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// [Engine Memory]: 1,766 MB (+1296kb) [00:01:11]

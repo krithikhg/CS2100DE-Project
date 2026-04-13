@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Apr 13 11:04:57 2026
+# Process ID: 51369
+# Current directory: /home/krithikh/CS2100DE-Project
+# Command line: vivado
+# Log file: /home/krithikh/CS2100DE-Project/vivado.log
+# Journal file: /home/krithikh/CS2100DE-Project/vivado.jou
+# Running On: krithikh-ThinkPad-P1-Gen-7, OS: Linux, CPU Frequency: 400.000 MHz, CPU Physical cores: 16, Host memory: 66830 MB
+#-----------------------------------------------------------
+start_gui
+create_project CS2100DE-Project . -part xc7a100tcsg324-1
+set_property board_part digilentinc.com:nexys4:part0:1.1 [current_project]
+add_files -norecurse {/home/krithikh/CS2100DE-Project/src/AA_DMEM.mem /home/krithikh/CS2100DE-Project/src/AA_IROM.mem}
+add_files -norecurse {/home/krithikh/CS2100DE-Project/src/RISCV_MMC.sv /home/krithikh/CS2100DE-Project/src/PC_Logic.sv /home/krithikh/CS2100DE-Project/src/Top_Test.sv /home/krithikh/CS2100DE-Project/src/ALU.sv /home/krithikh/CS2100DE-Project/src/ProgramCounter.sv /home/krithikh/CS2100DE-Project/src/RegFile.sv /home/krithikh/CS2100DE-Project/src/Decoder.sv /home/krithikh/CS2100DE-Project/src/Extend.sv /home/krithikh/CS2100DE-Project/src/Adder.sv /home/krithikh/CS2100DE-Project/src/Top_MMC.sv /home/krithikh/CS2100DE-Project/src/SevenSegDecoder.sv}
+add_files -fileset constrs_1 -norecurse /home/krithikh/CS2100DE-Project/src/Nexys-4-Master-2100.xdc
+update_compile_order -fileset sources_1

@@ -1,12 +1,12 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: National University of Singapore
-// Engineer: Neil Banerjee
+// Engineer: Krithikh Gopalakrishnan
 // 
 // Create Date: 22.02.2025 20:37:13
 // Design Name: RISCV-MMC
 // Module Name: Decoder 
-// Project Name: CS2100DE Labs
+// Project Name: CS2100DE Project
 // Target Devices: Nexys 4/Nexys 4 DDR
 // Tool Versions: Vivado 2023.2
 // Description: Instruction decoder and Control Unit for the RISC-V CPU we are building
