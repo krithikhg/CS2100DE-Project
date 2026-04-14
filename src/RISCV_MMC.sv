@@ -29,11 +29,11 @@ module RISCV_MMC(
     output mem_read,
     output reg mem_write_M,  // Delete reg for release. v2: Changed to column-wise write enable to support sb/sw. Each column is a byte.
     output [31:0] PC_F,   //changed to PC_F
-    output [31:0] ALUResult_M,
+    output reg [31:0] ALUResult_M,
     output reg [31:0] write_data_M  // Delete reg for release. v2: Renamed to support sb/sw
     );
 
-	assign mem_read = mem_to_reg_W; // This is needed for the proper functionality of some devices such as UART CONSOLE
+	assign mem_read = mem_to_reg_M; // This is needed for the proper functionality of some devices such as UART CONSOLE
 
 	
 	//----------------------------------------------//
@@ -69,7 +69,7 @@ module RISCV_MMC(
 	
 	logic [31:0] instr_D, PC_D;
 	
-	logic [31:0] reg_write_W;
+	logic reg_write_W;
 	logic [31:0] RD1_D, RD2_D;
 	
 	logic [2:0] imm_src;
@@ -142,14 +142,13 @@ module RISCV_MMC(
 	logic [4:0] rd_E;
 	logic [2:0] funct3_E;
 	logic [2:0] ALUFlags;
-	logic [1:0] PC_src_E;
 	logic [31:0] ALUResult_E;
 	
 	
 	//E Register
 	always @(posedge clk) begin
 	   if(rst) begin
-	       funct3_E <= funct3_D;
+	       funct3_E <= 3'b0;
 	       PCS_E <= 2'b0;
            reg_write_E <= 0;
            mem_to_reg_E <= 0;
@@ -209,7 +208,6 @@ module RISCV_MMC(
 	//----M-STAGE-----------------------------------//
     
     logic reg_write_M, mem_to_reg_M;
-    logic [31:0] ALUResult_M, write_data_M;
     logic [4:0] rd_M;
     
     //M Register
@@ -242,12 +240,11 @@ module RISCV_MMC(
 	//W Register
 	always @(posedge clk) begin
 	   if(rst) begin
-	       reg_write_M <= 0;
-           mem_to_reg_M <= 0;
-           mem_write_M <= 0;
-           ALUResult_M <= 32'b0;
-           write_data_M <= 32'b0;
-           rd_M <= 5'b0;
+	       reg_write_W <= 0;
+           mem_to_reg_W <= 0;
+           read_data_W <= 32'b0;
+           ALUResult_W <= 32'b0;
+           rd_W <= 5'b0;
 	   end else begin
            reg_write_W <= reg_write_M;
            mem_to_reg_W <= mem_to_reg_M;

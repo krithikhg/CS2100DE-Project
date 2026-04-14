@@ -54,15 +54,15 @@ module Top_MMC(
     logic [31:0] seven_seg_data;
     
     // ONLY FOR SIMULATION - COMMENT OUT FOR HARDWARE IMPLEMENTATION!!!
-//    assign clk_cpu = clk; 
+    assign clk_cpu = clk; 
     
     // ONLY FOR HARDWARE IMPLEMENTATION - COMMENT OUT FOR SIMULATION!!!
     logic [3:0] counter;
-    assign clk_cpu = counter[3];
+//    assign clk_cpu = counter[3];
     
-    always @(posedge clk) begin
-        counter <= counter + 1;
-    end
+//    always @(posedge clk) begin
+//        counter <= counter + 1;
+//    end
     
     // Initializing our instruction and data memories
     initial begin
@@ -127,13 +127,13 @@ module Top_MMC(
     RISCV_MMC cpu (
         .clk(clk_cpu),
         .rst(!btnCpuReset),
-        .instr(instr),
-        .mem_read_data(mem_read_data),
+        .instr_F(instr),
+        .read_data_M(mem_read_data),
         .mem_read(mem_read),
-        .mem_write(mem_we),
-        .PC(PC),
-        .alu_result(mem_addr),
-        .mem_write_data(mem_write_data)
+        .mem_write_M(mem_we),
+        .PC_F(PC),
+        .ALUResult_M(mem_addr),
+        .write_data_M(mem_write_data)
     );
     
 endmodule

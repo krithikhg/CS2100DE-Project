@@ -1,0 +1,61 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Tue Apr 14 12:44:41 2026
+| Host         : krithikh-ThinkPad-P1-Gen-7 running 64-bit Ubuntu 22.04.5 LTS
+| Command      : report_drc -file Top_MMC_drc_routed.rpt -pb Top_MMC_drc_routed.pb -rpx Top_MMC_drc_routed.rpx
+| Design       : Top_MMC
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 5
++----------+----------+-------------------+------------+
+| Rule     | Severity | Description       | Violations |
++----------+----------+-------------------+------------+
+| PDRC-153 | Warning  | Gated clock check | 5          |
++----------+----------+-------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PDRC-153#1 Warning
+Gated clock check  
+Net cpu/decoder_uut/PCS_reg[1]_i_2_n_0 is a gated clock net sourced by a combinational pin cpu/decoder_uut/PCS_reg[1]_i_2/O, cell cpu/decoder_uut/PCS_reg[1]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net cpu/decoder_uut/alu_src_a_reg[1]_i_2_n_0 is a gated clock net sourced by a combinational pin cpu/decoder_uut/alu_src_a_reg[1]_i_2/O, cell cpu/decoder_uut/alu_src_a_reg[1]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net cpu/decoder_uut/alu_src_b_reg[1]_i_2_n_0 is a gated clock net sourced by a combinational pin cpu/decoder_uut/alu_src_b_reg[1]_i_2/O, cell cpu/decoder_uut/alu_src_b_reg[1]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net cpu/decoder_uut/imm_src_reg[2]_i_1_n_0 is a gated clock net sourced by a combinational pin cpu/decoder_uut/imm_src_reg[2]_i_1/O, cell cpu/decoder_uut/imm_src_reg[2]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#5 Warning
+Gated clock check  
+Net cpu/decoder_uut/mem_to_reg_reg_i_2_n_0 is a gated clock net sourced by a combinational pin cpu/decoder_uut/mem_to_reg_reg_i_2/O, cell cpu/decoder_uut/mem_to_reg_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+

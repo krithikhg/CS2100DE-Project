@@ -1,0 +1,93 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Tue Apr 14 12:44:18 2026
+| Host         : krithikh-ThinkPad-P1-Gen-7 running 64-bit Ubuntu 22.04.5 LTS
+| Command      : report_control_sets -verbose -file Top_MMC_control_sets_placed.rpt
+| Design       : Top_MMC
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    15 |
+|    Minimum number of control sets                        |    15 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    62 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    15 |
+| >= 0 to < 4        |     7 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     6 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              36 |           15 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             382 |          151 |
+| Yes          | No                    | No                     |              48 |            9 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------------+--------------------------+-------------------------------+------------------+----------------+--------------+
+|                Clock Signal               |       Enable Signal      |        Set/Reset Signal       | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------------------------------+--------------------------+-------------------------------+------------------+----------------+--------------+
+|  cpu/decoder_uut/alu_src_a_reg[1]_i_2_n_0 |                          |                               |                1 |              1 |         1.00 |
+|  cpu/decoder_uut/alu_src_b_reg[1]_i_2_n_0 |                          |                               |                1 |              1 |         1.00 |
+|  cpu/decoder_uut/mem_to_reg_reg_i_2_n_0   |                          |                               |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                            |                          | ss_decoder/an[0]_i_1_n_0      |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                            |                          | ss_decoder/an_to_display[0]   |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                            |                          | ss_decoder/an_to_display[2]   |                1 |              2 |         2.00 |
+|  cpu/decoder_uut/imm_src_reg[2]_i_1_n_0   |                          |                               |                2 |              3 |         1.50 |
+|  clk_IBUF_BUFG                            |                          | ss_decoder/an_to_display[1]   |                2 |              4 |         2.00 |
+|  cpu/decoder_uut/PCS_reg[1]_i_2_n_0       |                          |                               |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG                            | cpu/E[0]                 |                               |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG                            |                          |                               |                7 |             20 |         2.86 |
+|  clk_IBUF_BUFG                            | cpu/mem_write_M_reg_0[0] |                               |                5 |             32 |         6.40 |
+|  clk_IBUF_BUFG                            | cpu/regfile_uut/p_0_in   |                               |               11 |             88 |         8.00 |
+|  clk_IBUF_BUFG                            | cpu/p_0_in0_out          |                               |               32 |            128 |         4.00 |
+|  clk_IBUF_BUFG                            |                          | cpu/program_counter_uut/SR[0] |              146 |            374 |         2.56 |
++-------------------------------------------+--------------------------+-------------------------------+------------------+----------------+--------------+
+
+
