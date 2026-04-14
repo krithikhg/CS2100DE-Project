@@ -29,11 +29,11 @@ module Decoder(
     output logic [1:0] alu_src_a,
     output logic [1:0] alu_src_b,
     output logic [2:0] imm_src,
+    output logic [2:0] funct3,
     output logic reg_write
     );
     
     logic [6:0] opcode;
-    logic [2:0] funct3;
     logic [6:0] funct7;
 
     assign opcode = instr[6:0]; 

@@ -172,3 +172,143 @@ dismissDialog("New Project"); // f (dialog0)
 // TclEventType: DG_GRAPH_STALE
 // Tcl Message: update_compile_order -fileset sources_1 
 // [Engine Memory]: 1,766 MB (+1296kb) [00:01:11]
+// Elapsed time: 374 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Memory File]", 2); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Test (Top_Test.sv)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Test (Top_Test.sv)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Test (Top_Test.sv)]", 1, true, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_OPEN_FILE_WITH, "Open With"); // al (PAResourceCommand.PACommandNames_OPEN_FILE_WITH, Open With)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // al (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // al (PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // al (PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // al (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update)
+selectMenu(PAResourceCommand.PACommandNames_OPEN_FILE_WITH, "Open With"); // al (PAResourceCommand.PACommandNames_OPEN_FILE_WITH, Open With)
+selectMenu(PAResourceCommand.PACommandNames_OPEN_FILE_WITH, "Open With"); // al (PAResourceCommand.PACommandNames_OPEN_FILE_WITH, Open With)
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aa
+selectTab((HResource) null, (String) null, (HResource) null, "Sources", 0, true, false); // aa - Popup Trigger
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aa
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // al (PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, Hierarchy Update)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // al (PAResourceQtoS.SrcMenu_IP_HIERARCHY, IP Hierarchy)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ao (PAResourceCommand.PACommandNames_ADD_SOURCES, add_sources_menu)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton (NEXT)
+selectButton("CANCEL", "Cancel"); // JButton (CANCEL)
+dismissDialog("Add Sources"); // c (dialog3)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 7); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 8); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Test (Top_Test.sv)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+// [GUI Memory]: 157 MB (+11238kb) [00:07:46]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Test (Top_Test.sv)]", 1, true, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_OPEN_FILE_WITH, "Open With"); // al (PAResourceCommand.PACommandNames_OPEN_FILE_WITH, Open With)
+selectMenuItem(PAResourceCommand.PACommandNames_MOVE_TO_SIM_SET, "Move to Simulation Sources"); // ao (PAResourceCommand.PACommandNames_MOVE_TO_SIM_SET, move_to_sim_set_menu)
+// Run Command: PAResourceCommand.PACommandNames_MOVE_TO_SIM_SET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: move_files -fileset sim_1 [get_files  /home/krithikh/CS2100DE-Project/src/Top_Test.sv] 
+// Elapsed Time for: 'L.f': 06m:48s
+// Elapsed Time for: 'L.f': 06m:50s
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Elapsed Time for: 'L.f': 06m:52s
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Top_Test (Top_Test.sv)]", 8); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// Elapsed Time for: 'L.f': 06m:54s
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Top_Test (Top_Test.sv), dut : Top_MMC (Top_MMC.sv)]", 9); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_MMC (Top_MMC.sv)]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_MMC (Top_MMC.sv), cpu : RISCV_MMC (RISCV_MMC.sv)]", 3); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_MMC (Top_MMC.sv), cpu : RISCV_MMC (RISCV_MMC.sv)]", 3, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_MMC (Top_MMC.sv), cpu : RISCV_MMC (RISCV_MMC.sv)]", 3, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 1,821 MB. GUI used memory: 78 MB. Current time: 4/13/26, 11:13:06 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,823 MB. GUI used memory: 77 MB. Current time: 4/13/26, 11:43:06 AM SGT
+// Elapsed time: 1986 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_MMC (Top_MMC.sv), cpu : RISCV_MMC (RISCV_MMC.sv)]", 3); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_MMC (Top_MMC.sv), cpu : RISCV_MMC (RISCV_MMC.sv), decoder_uut : Decoder (Decoder.sv)]", 5, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_MMC (Top_MMC.sv), cpu : RISCV_MMC (RISCV_MMC.sv), decoder_uut : Decoder (Decoder.sv)]", 5, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// [Engine Memory]: 1,866 MB (+11372kb) [00:41:14]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,866 MB. GUI used memory: 78 MB. Current time: 4/13/26, 11:46:16 AM SGT
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RISCV_MMC.sv", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 35 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Decoder.sv", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 115 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_MMC (Top_MMC.sv), cpu : RISCV_MMC (RISCV_MMC.sv), extender_uut : Extend (Extend.sv)]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_MMC (Top_MMC.sv), cpu : RISCV_MMC (RISCV_MMC.sv), extender_uut : Extend (Extend.sv)]", 4, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 1,906 MB. GUI used memory: 78 MB. Current time: 4/13/26, 11:48:56 AM SGT
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RISCV_MMC.sv", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 556 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Decoder.sv", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,907 MB. GUI used memory: 61 MB. Current time: 4/13/26, 12:18:56 PM SGT
+// WARNING: HEventQueue.dispatchEvent() is taking  1355 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1395 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,917 MB. GUI used memory: 62 MB. Current time: 4/13/26, 1:35:37 PM SGT
+// WARNING: HEventQueue.dispatchEvent() is taking  1135 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1245 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,909 MB. GUI used memory: 63 MB. Current time: 4/13/26, 3:26:09 PM SGT
+// WARNING: HEventQueue.dispatchEvent() is taking  1311 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,910 MB. GUI used memory: 60 MB. Current time: 4/13/26, 3:56:10 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,910 MB. GUI used memory: 60 MB. Current time: 4/13/26, 4:26:11 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,910 MB. GUI used memory: 60 MB. Current time: 4/13/26, 4:56:11 PM SGT
+// WARNING: HEventQueue.dispatchEvent() is taking  1921 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1640 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,910 MB. GUI used memory: 60 MB. Current time: 4/13/26, 7:17:05 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,910 MB. GUI used memory: 60 MB. Current time: 4/13/26, 7:47:05 PM SGT
+// WARNING: HEventQueue.dispatchEvent() is taking  1036 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,910 MB. GUI used memory: 60 MB. Current time: 4/13/26, 8:17:06 PM SGT
+// Elapsed time: 30579 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RISCV_MMC.sv", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 112 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_MMC (Top_MMC.sv)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_MMC (Top_MMC.sv)]", 1, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 1,940 MB. GUI used memory: 60 MB. Current time: 4/13/26, 8:29:51 PM SGT
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RISCV_MMC.sv", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 523 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Top_Test (Top_Test.sv), dut : Top_MMC (Top_MMC.sv), cpu : RISCV_MMC (RISCV_MMC.sv)]", 11); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Top_Test (Top_Test.sv), dut : Top_MMC (Top_MMC.sv), cpu : RISCV_MMC (RISCV_MMC.sv), alu_uut : ALU (ALU.sv)]", 14, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Top_Test (Top_Test.sv), dut : Top_MMC (Top_MMC.sv), cpu : RISCV_MMC (RISCV_MMC.sv), alu_uut : ALU (ALU.sv)]", 14, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// [Engine Memory]: 1,960 MB (+1441kb) [09:33:38]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,980 MB. GUI used memory: 60 MB. Current time: 4/13/26, 8:38:41 PM SGT
+// Elapsed time: 14 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // J (PAResourceOtoP.PAViews_CODE, PlanAheadTabCode)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RISCV_MMC.sv", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_MMC.sv", 4); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 22 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RISCV_MMC.sv", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_MMC.sv", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 23 seconds
+selectCodeEditor("Top_MMC.sv", 166, 273); // ad (Top_MMC.sv)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RISCV_MMC.sv", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 72 seconds
+selectCodeEditor("RISCV_MMC.sv", 194, 353); // ad (RISCV_MMC.sv)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Top_Test (Top_Test.sv), dut : Top_MMC (Top_MMC.sv), cpu : RISCV_MMC (RISCV_MMC.sv), pc_logic_uut : PC_Logic (PC_Logic.sv)]", 16, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Top_Test (Top_Test.sv), dut : Top_MMC (Top_MMC.sv), cpu : RISCV_MMC (RISCV_MMC.sv), pc_logic_uut : PC_Logic (PC_Logic.sv)]", 16, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Top_Test (Top_Test.sv), dut : Top_MMC (Top_MMC.sv), cpu : RISCV_MMC (RISCV_MMC.sv), program_counter_uut : ProgramCounter (ProgramCounter.sv)]", 17, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Top_Test (Top_Test.sv), dut : Top_MMC (Top_MMC.sv), cpu : RISCV_MMC (RISCV_MMC.sv), program_counter_uut : ProgramCounter (ProgramCounter.sv)]", 17, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 2,029 MB. GUI used memory: 61 MB. Current time: 4/13/26, 8:41:21 PM SGT
+// Elapsed time: 19 seconds
+selectCodeEditor("ProgramCounter.sv", 428, 318); // ad (ProgramCounter.sv)
+selectCodeEditor("ProgramCounter.sv", 428, 318); // ad (ProgramCounter.sv)
+selectCodeEditor("ProgramCounter.sv", 428, 318); // ad (ProgramCounter.sv)
+selectCodeEditor("ProgramCounter.sv", 425, 318); // ad (ProgramCounter.sv)
+// Elapsed time: 47 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PC_Logic.sv", 5); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Extend.sv", 4); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Decoder.sv", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RISCV_MMC.sv", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 29 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_MMC.sv", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Decoder.sv", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Extend.sv", 4); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PC_Logic.sv", 5); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Decoder.sv", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RISCV_MMC.sv", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ProgramCounter.sv", 6); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "RISCV_MMC.sv", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,030 MB. GUI used memory: 62 MB. Current time: 4/13/26, 9:11:21 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,030 MB. GUI used memory: 62 MB. Current time: 4/13/26, 9:41:21 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,030 MB. GUI used memory: 61 MB. Current time: 4/13/26, 10:11:21 PM SGT
+// WARNING: HEventQueue.dispatchEvent() is taking  1731 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,030 MB. GUI used memory: 62 MB. Current time: 4/14/26, 7:04:59 AM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,030 MB. GUI used memory: 61 MB. Current time: 4/14/26, 7:35:03 AM SGT

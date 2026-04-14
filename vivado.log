@@ -122,3 +122,4 @@ add_files -norecurse {/home/krithikh/CS2100DE-Project/src/AA_DMEM.mem /home/krit
 add_files -norecurse {/home/krithikh/CS2100DE-Project/src/RISCV_MMC.sv /home/krithikh/CS2100DE-Project/src/PC_Logic.sv /home/krithikh/CS2100DE-Project/src/Top_Test.sv /home/krithikh/CS2100DE-Project/src/ALU.sv /home/krithikh/CS2100DE-Project/src/ProgramCounter.sv /home/krithikh/CS2100DE-Project/src/RegFile.sv /home/krithikh/CS2100DE-Project/src/Decoder.sv /home/krithikh/CS2100DE-Project/src/Extend.sv /home/krithikh/CS2100DE-Project/src/Adder.sv /home/krithikh/CS2100DE-Project/src/Top_MMC.sv /home/krithikh/CS2100DE-Project/src/SevenSegDecoder.sv}
 add_files -fileset constrs_1 -norecurse /home/krithikh/CS2100DE-Project/src/Nexys-4-Master-2100.xdc
 update_compile_order -fileset sources_1
+move_files -fileset sim_1 [get_files  /home/krithikh/CS2100DE-Project/src/Top_Test.sv]
