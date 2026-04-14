@@ -43,6 +43,7 @@ module RISCV_MMC(
 	logic [1:0] PC_src_E;
 	logic [31:0] ext_imm_E, RD1_E;
 	logic [31:0] PC_E, PC_IN;
+	logic flush; //added for branch flushing
 	
 	assign adder_pc_a_F = PC_src_E[0] ? ext_imm_E : 32'd4;
     assign adder_pc_b_F = PC_src_E[1] ? RD1_E : (PC_src_E[0] ? PC_E : PC_F); //multiplexer added here for jal/jalr
@@ -62,6 +63,8 @@ module RISCV_MMC(
         .pc_in(PC_IN),
         .pc(PC_F)
     );
+    
+    assign flush = (PC_src_E != 2'b00);
     
 	
 	//----------------------------------------------//
@@ -86,7 +89,7 @@ module RISCV_MMC(
 	
 	//D Register
 	always @(posedge clk) begin
-	   if(rst) begin
+	   if(rst || flush) begin //added flush here
 	       instr_D <= 32'b0;
 	       PC_D <= 32'b0;
 	   end else begin
@@ -147,7 +150,7 @@ module RISCV_MMC(
 	
 	//E Register
 	always @(posedge clk) begin
-	   if(rst) begin
+	   if(rst || flush) begin //added flush here
 	       funct3_E <= 3'b0;
 	       PCS_E <= 2'b0;
            reg_write_E <= 0;
