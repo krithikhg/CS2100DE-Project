@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
-| Date         : Wed Apr 15 22:35:26 2026
+| Date         : Wed Apr 15 22:53:01 2026
 | Host         : krithikh-ThinkPad-P1-Gen-7 running 64-bit Ubuntu 22.04.5 LTS
 | Command      : report_control_sets -verbose -file Top_MMC_control_sets_placed.rpt
 | Design       : Top_MMC
@@ -73,11 +73,11 @@ Table of Contents
 +-------------------------------------------+--------------------------+-----------------------------------+------------------+----------------+--------------+
 |                Clock Signal               |       Enable Signal      |          Set/Reset Signal         | Slice Load Count | Bel Load Count | Bels / Slice |
 +-------------------------------------------+--------------------------+-----------------------------------+------------------+----------------+--------------+
-|  clk_IBUF_BUFG                            |                          | ss_decoder/an_to_display[0]       |                1 |              1 |         1.00 |
-|  clk_IBUF_BUFG                            |                          | ss_decoder/an[0]_i_1_n_0          |                1 |              1 |         1.00 |
-|  cpu/decoder_uut/mem_to_reg_reg_i_2_n_0   |                          |                                   |                1 |              1 |         1.00 |
 |  cpu/decoder_uut/alu_src_b_reg[1]_i_2_n_0 |                          |                                   |                1 |              1 |         1.00 |
+|  cpu/decoder_uut/mem_to_reg_reg_i_2_n_0   |                          |                                   |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                            |                          | ss_decoder/an[0]_i_1_n_0          |                1 |              1 |         1.00 |
 |  cpu/decoder_uut/alu_src_a_reg[1]_i_2_n_0 |                          |                                   |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                            |                          | ss_decoder/an_to_display[0]       |                1 |              1 |         1.00 |
 |  clk_IBUF_BUFG                            |                          | ss_decoder/an_to_display[2]       |                1 |              2 |         2.00 |
 |  cpu/decoder_uut/imm_src_reg[2]_i_1_n_0   |                          |                                   |                1 |              3 |         3.00 |
 |  clk_IBUF_BUFG                            |                          | ss_decoder/an_to_display[1]       |                2 |              4 |         2.00 |
