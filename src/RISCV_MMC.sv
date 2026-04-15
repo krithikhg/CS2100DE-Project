@@ -151,25 +151,15 @@ module RISCV_MMC(
 	//E Register
 	always @(posedge clk) begin
 	   if(rst || flush) begin //added flush here
-	       funct3_E <= 3'b0;
 	       PCS_E <= 2'b0;
            reg_write_E <= 0;
-           mem_to_reg_E <= 0;
            mem_write_E <= 0;
-           ALUControl_E <= 4'b0;
-           ALUSrcA_E <= 2'b0;
-           ALUSrcB_E <= 2'b0;
-           RD1_E <= 32'b0;
-           RD2_E <= 32'b0;
-           ext_imm_E <= 32'b0;
-           PC_E <= 32'b0;
-           rd_E <= 5'b0;
 	   end else begin
+	       PCS_E <= PCS_D;
+	       reg_write_E <= reg_write_D;
+	       mem_write_E <= mem_write_D;
 	       funct3_E <= funct3_D;
-           PCS_E <= PCS_D;
-           reg_write_E <= reg_write_D;
            mem_to_reg_E <= mem_to_reg_D;
-           mem_write_E <= mem_write_D;
            ALUControl_E <= ALUControl_D;
            ALUSrcA_E <= ALUSrcA_D;
            ALUSrcB_E <= ALUSrcB_D;
@@ -217,11 +207,7 @@ module RISCV_MMC(
 	always @(posedge clk) begin
 	   if(rst) begin
 	       reg_write_M <= 0;
-           mem_to_reg_M <= 0;
            mem_write_M <= 0;
-           ALUResult_M <= 32'b0;
-           write_data_M <= 32'b0;
-           rd_M <= 5'b0;
 	   end else begin
            reg_write_M <= reg_write_E;
            mem_to_reg_M <= mem_to_reg_E;
@@ -244,10 +230,6 @@ module RISCV_MMC(
 	always @(posedge clk) begin
 	   if(rst) begin
 	       reg_write_W <= 0;
-           mem_to_reg_W <= 0;
-           read_data_W <= 32'b0;
-           ALUResult_W <= 32'b0;
-           rd_W <= 5'b0;
 	   end else begin
            reg_write_W <= reg_write_M;
            mem_to_reg_W <= mem_to_reg_M;

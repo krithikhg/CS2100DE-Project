@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: National University of Singapore
-// Engineer: Krithikh Gopalakrishnan
+// Engineer: Neil Banerjee
 // 
 // Create Date: 22.02.2025 20:37:13
 // Design Name: RISCV-MMC

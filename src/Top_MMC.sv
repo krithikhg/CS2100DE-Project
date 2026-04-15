@@ -57,8 +57,8 @@ module Top_MMC(
     assign clk_cpu = clk; 
     
     // ONLY FOR HARDWARE IMPLEMENTATION - COMMENT OUT FOR SIMULATION!!!
-    logic [3:0] counter;
-//    assign clk_cpu = counter[3];
+    logic [2:0] counter;
+//    assign clk_cpu = counter[2];
     
 //    always @(posedge clk) begin
 //        counter <= counter + 1;
@@ -76,7 +76,7 @@ module Top_MMC(
     
     // Returning instruction words from the instruction memory. Memory reading is combinational. 
     always_comb begin
-        if (PC >= 32'h0 && PC < 32'hFF) begin
+        if (PC >= 32'h0 && PC < 32'h3FF) begin
             instr <= instruction_rom[PC[10:2]];
         end
         else begin

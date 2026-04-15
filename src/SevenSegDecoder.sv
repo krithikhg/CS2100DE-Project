@@ -32,8 +32,8 @@ module SevenSegDecoder(
     
     logic [3:0] byte_to_display;
     
-    assign seg = (byte_to_display == 4'b0000) ? 7'b1000000  // 0
-                : (byte_to_display == 4'b0001) ? 7'b1111001  // 1
+    assign seg = (byte_to_display == 4'b0000) ? 7'b1111111 // 0
+                : (byte_to_display == 4'b0001) ? 7'b0111111  // 1
                 : (byte_to_display == 4'b0010) ? 7'b0100100  // 2
                 : (byte_to_display == 4'b0011) ? 7'b0110000  // 3
                 : (byte_to_display == 4'b0100) ? 7'b0011001  // 4
