@@ -10,7 +10,7 @@ main:
         addi    sp, sp, -16
         nop
         nop
-        nop                         # Resolve sp RAW for sw
+        nop                         
         sw      s0, 12(sp)
         sw      s1, 8(sp)
         sw      s2, 4(sp)
@@ -22,13 +22,13 @@ main:
         lui     a0, 244
         lui     a6, 8
         lw      t2, 1028(t3)
-        nop                         # a0 written by lui 2 instructions prior; 1 nop needed
+        nop                        
         addi    t5, a0, 575
         addi    a4, a0, 576
         lui     a7, 16
         nop
         nop
-        nop                         # Resolve a7 RAW for addi
+        nop                         
         addi    a7, a7, -256
         li      t0, 7
         li      t1, 1
@@ -40,71 +40,71 @@ main:
         mv      a0, t6
         nop
         nop
-        nop                         # Resolve a0 RAW for snez in .LBB0_3
+        nop                         
 .LBB0_3:
         snez    s0, a0
         sll     s1, a1, a3
         addi    a3, a3, -4
-        nop                         # s0 written by snez 2 instructions prior; 1 nop needed
+        nop                        
         addi    s0, s0, -1
         nop
         nop
-        nop                         # Resolve s0 RAW for and
+        nop                        
         and     s0, s0, s1
         nop
         nop
-        nop                         # Resolve s0 RAW for or
+        nop                        
         or      a5, a5, s0
         addi    a0, a0, -1
         nop
-        nop                         # Resolve a0 RAW for snez on loop back
+        nop                        
         bne     a3, a2, .LBB0_3
         sw      a5, 1048(t3)
         sw      zero, 0(sp)
         nop
         nop
-        nop                         # Resolve Store-to-Load memory hazard for 0(sp)
+        nop                         
         lw      a0, 0(sp)
         nop
         nop
-        nop                         # Resolve a0 RAW for blt
+        nop                         
         blt     t5, a0, .LBB0_6
 .LBB0_5:
         lw      a0, 0(sp)
         nop
         nop
-        nop                         # Resolve a0 RAW for addi
+        nop                        
         addi    a0, a0, 1
         nop
         nop
-        nop                         # Resolve a0 RAW for sw
+        nop                       
         sw      a0, 0(sp)
         nop
         nop
-        nop                         # Resolve Store-to-Load memory hazard for 0(sp)
+        nop                        
         lw      a0, 0(sp)
         nop
         nop
-        nop                         # Resolve a0 RAW for blt
+        nop                       
         blt     a0, a4, .LBB0_5
 .LBB0_6:
         andi    a0, s2, 1
         li      s2, 1
         nop
-        nop                         # a0 written by andi 1 instruction prior; 2 nops needed
+        nop                        
         bnez    a0, .LBB0_2
         lw      t2, 1028(t3)
         nop
         nop
-        nop                         # Resolve t2 RAW for xor
+        nop                       
         xor     a0, t2, t4
         nop
         nop
-        nop                         # Resolve a0 RAW for andi
+        nop                        
         andi    a3, a0, 1
         and     a0, a0, a6          
         nop
-        nop                         # a3 written by andi 1 instruction prior; 2 nops needed
+        nop                         
         bnez    a3, .LBB0_11
         beqz    a0, .LBB0_13        
         bnez    t6, .LBB0_18
@@ -117,12 +117,12 @@ main:
 .LBB0_13:
         nop
         nop
-        nop                         # Resolve t1 RAW from preceding branches
+        nop                        
         add     t6, t6, t1
         li      a0, 7
         nop
         nop
-        nop                         # Resolve a0 RAW for bge
+        nop                         
         bge     a0, t6, .LBB0_16
         mv      a0, a7
         li      t6, 7
@@ -139,7 +139,7 @@ main:
 .LBB0_19:
         nop
         nop
-        nop                         # Resolve a0 RAW prior to sw
+        nop                        
         sw      a0, 1024(t3)
         li      s2, 1
         j       .LBB0_1

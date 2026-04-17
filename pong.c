@@ -43,7 +43,7 @@ int main() {
         // Right player flipped
         if (right_flipped) {
             if (ball_pos == 7) {
-                direction = -1;  // Valid flip at boundary — bounce
+                direction = -1;  // Valid flip at boundary, bounce
             } else {
                 running = 0;
                 *led_ptr = 0xFF00;  // Too early — left wins
@@ -54,10 +54,10 @@ int main() {
         // Left player flipped
         if (left_flipped) {
             if (ball_pos == 0) {
-                direction = 1;  // Valid flip at boundary — bounce
+                direction = 1;  // Valid flip at boundary, bounce
             } else {
                 running = 0;
-                *led_ptr = 0x00FF;  // Too early — right wins
+                *led_ptr = 0x00FF;  // Too early, right wins
                 continue;
             }
         }
@@ -65,14 +65,14 @@ int main() {
         // Move ball
         ball_pos += direction;
 
-        // Ball went past right boundary — right player too late
+        // Ball went past right boundary, right player too late
         if (ball_pos > 7) {
             ball_pos = 7;
             running = 0;
             *led_ptr = 0xFF00;  // Left wins
         }
 
-        // Ball went past left boundary — left player too late
+        // Ball went past left boundary, left player too late
         if (ball_pos < 0) {
             ball_pos = 0;
             running = 0;
